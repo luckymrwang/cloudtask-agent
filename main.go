@@ -8,7 +8,6 @@ import (
 )
 
 func main() {
-
 	jobworker, err := NewJobWorker()
 	if err != nil {
 		log.Printf("jobworker error, %s\n", err.Error())

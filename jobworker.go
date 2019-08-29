@@ -1,8 +1,8 @@
 package main
 
-import "github.com/cloudtask/cloudtask-agent/api"
-import "github.com/cloudtask/cloudtask-agent/etc"
-import "github.com/cloudtask/cloudtask-agent/server"
+import "cloudtask-agent/api"
+import "cloudtask-agent/etc"
+import "cloudtask-agent/server"
 import "github.com/cloudtask/libtools/gounits/flocker"
 import "github.com/cloudtask/libtools/gounits/logger"
 import "github.com/cloudtask/libtools/gounits/rand"

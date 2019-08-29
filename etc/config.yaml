@@ -2,10 +2,10 @@ version: v.2.3.4
 pidfile: ./jobworker.pid
 retrystartup: true
 useserverconfig: true
-centerhost: http://192.168.2.80:8985
-websitehost: http://192.168.2.80:8091
+centerhost: http://127.0.0.1:8985
+websitehost: http://127.0.0.1:8091
 cluster:
-    hosts: 192.168.2.80:2181,192.168.2.81:2181,192.168.2.82:2181
+    hosts: 127.0.0.1:2181
     root: /cloudtask
     device:
     runtime: myCluster
