@@ -1,6 +1,6 @@
 package cache
 
-import "github.com/cloudtask/common/models"
+import "cloudtask/common/models"
 
 //CacheConfigs is exported
 type CacheConfigs struct {

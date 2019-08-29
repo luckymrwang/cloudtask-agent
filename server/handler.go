@@ -1,10 +1,10 @@
 package server
 
-import "github.com/cloudtask/cloudtask-agent/cache"
-import "github.com/cloudtask/cloudtask-agent/driver"
-import "github.com/cloudtask/libtools/gounits/logger"
-import "github.com/cloudtask/libtools/gzkwrapper"
-import "github.com/cloudtask/common/models"
+import "cloudtask-agent/cache"
+import "cloudtask-agent/driver"
+import "cloudtask/libtools/gounits/logger"
+import "cloudtask/libtools/gzkwrapper"
+import "cloudtask/common/models"
 
 import (
 	"time"

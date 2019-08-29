@@ -1,7 +1,7 @@
 package api
 
-import "github.com/cloudtask/cloudtask-agent/cache"
-import "github.com/cloudtask/cloudtask-agent/driver"
+import "cloudtask-agent/cache"
+import "cloudtask-agent/driver"
 
 import (
 	"net/http"

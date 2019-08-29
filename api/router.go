@@ -1,8 +1,8 @@
 package api
 
-import "github.com/cloudtask/cloudtask-agent/cache"
-import "github.com/cloudtask/cloudtask-agent/etc"
-import "github.com/cloudtask/libtools/gzkwrapper"
+import "cloudtask-agent/cache"
+import "cloudtask-agent/etc"
+import "cloudtask/libtools/gzkwrapper"
 import "github.com/gorilla/mux"
 
 import (

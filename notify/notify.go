@@ -1,8 +1,8 @@
 package notify
 
-import "github.com/cloudtask/libtools/gounits/container"
-import "github.com/cloudtask/libtools/gounits/httpx"
-import "github.com/cloudtask/libtools/gounits/logger"
+import "cloudtask/libtools/gounits/container"
+import "cloudtask/libtools/gounits/httpx"
+import "cloudtask/libtools/gounits/logger"
 
 import (
 	"context"

@@ -3,10 +3,10 @@ package main
 import "cloudtask-agent/api"
 import "cloudtask-agent/etc"
 import "cloudtask-agent/server"
-import "github.com/cloudtask/libtools/gounits/flocker"
-import "github.com/cloudtask/libtools/gounits/logger"
-import "github.com/cloudtask/libtools/gounits/rand"
-import "github.com/cloudtask/libtools/gounits/system"
+import "cloudtask/libtools/gounits/flocker"
+import "cloudtask/libtools/gounits/logger"
+import "cloudtask/libtools/gounits/rand"
+import "cloudtask/libtools/gounits/system"
 
 import (
 	"flag"
@@ -36,7 +36,6 @@ func init() {
 
 //NewJobWorker is exported
 func NewJobWorker() (*JobWorker, error) {
-
 	var filePath string
 	flag.StringVar(&filePath, "f", "./etc/config.yaml", "jobworker etc file.")
 	flag.Parse()
@@ -83,7 +82,6 @@ func NewJobWorker() (*JobWorker, error) {
 
 //Startup is exported
 func (worker *JobWorker) Startup() error {
-
 	var err error
 	for {
 		if err != nil {

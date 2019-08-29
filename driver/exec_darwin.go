@@ -1,6 +1,6 @@
 package driver
 
-import "github.com/cloudtask/libtools/gounits/logger"
+import "cloudtask/libtools/gounits/logger"
 
 import (
 	"bufio"

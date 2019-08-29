@@ -1,8 +1,8 @@
 package driver
 
-import "github.com/cloudtask/common/models"
-import "github.com/cloudtask/libtools/gounits/utils"
-import "github.com/cloudtask/libtools/gounits/logger"
+import "cloudtask/common/models"
+import "cloudtask/libtools/gounits/utils"
+import "cloudtask/libtools/gounits/logger"
 
 import (
 	"errors"

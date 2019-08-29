@@ -1,9 +1,9 @@
 package cache
 
-import "github.com/cloudtask/libtools/gounits/system"
-import "github.com/cloudtask/libtools/gounits/utils"
-import "github.com/cloudtask/libtools/gounits/logger"
-import "github.com/cloudtask/common/models"
+import "cloudtask/libtools/gounits/system"
+import "cloudtask/libtools/gounits/utils"
+import "cloudtask/libtools/gounits/logger"
+import "cloudtask/common/models"
 
 import (
 	"encoding/json"

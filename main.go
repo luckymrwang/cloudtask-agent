@@ -1,6 +1,6 @@
 package main
 
-import "github.com/cloudtask/libtools/gounits/system"
+import "cloudtask/libtools/gounits/system"
 
 import (
 	"log"

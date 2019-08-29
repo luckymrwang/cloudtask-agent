@@ -1,8 +1,8 @@
 package notify
 
-import "github.com/cloudtask/libtools/gounits/logger"
-import "github.com/cloudtask/libtools/gounits/rand"
-import "github.com/cloudtask/common/models"
+import "cloudtask/libtools/gounits/logger"
+import "cloudtask/libtools/gounits/rand"
+import "cloudtask/common/models"
 
 import (
 	"time"

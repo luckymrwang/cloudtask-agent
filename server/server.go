@@ -1,12 +1,12 @@
 package server
 
-import "github.com/cloudtask/cloudtask-agent/cache"
-import "github.com/cloudtask/cloudtask-agent/driver"
-import "github.com/cloudtask/cloudtask-agent/etc"
-import "github.com/cloudtask/cloudtask-agent/notify"
-import "github.com/cloudtask/libtools/gounits/logger"
-import "github.com/cloudtask/libtools/gzkwrapper"
-import "github.com/cloudtask/common/models"
+import "cloudtask-agent/cache"
+import "cloudtask-agent/driver"
+import "cloudtask-agent/etc"
+import "cloudtask-agent/notify"
+import "cloudtask/libtools/gounits/logger"
+import "cloudtask/libtools/gzkwrapper"
+import "cloudtask/common/models"
 
 import (
 	"time"
@@ -38,7 +38,6 @@ type NodeServer struct {
 
 //NewNodeServer is exported
 func NewNodeServer(key string) (*NodeServer, error) {
-
 	clusterConfigs := etc.ClusterConfigs()
 	server := &NodeServer{
 		Key:        key,
@@ -64,7 +63,6 @@ func NewNodeServer(key string) (*NodeServer, error) {
 
 //Startup is exported
 func (server *NodeServer) Startup() error {
-
 	var err error
 	defer func() {
 		if err != nil {
@@ -110,7 +108,6 @@ func (server *NodeServer) Stop() error {
 
 //nodeRegister is exported
 func (server *NodeServer) nodeRegister() error {
-
 	if err := server.Worker.Open(); err != nil {
 		return err
 	}
@@ -297,7 +294,6 @@ func (server *NodeServer) disposeDriver(event cache.CacheEvent, jobbase *models.
 
 //dispatchDriverLoop is exported
 func (server *NodeServer) dispatchDriverLoop() {
-
 	for {
 		driverTicker := time.NewTicker(dispatchDriverInterval)
 		select {

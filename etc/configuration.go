@@ -1,10 +1,10 @@
 package etc
 
-import "github.com/cloudtask/common/models"
-import "github.com/cloudtask/cloudtask-agent/cache"
-import "github.com/cloudtask/libtools/gounits/logger"
-import "github.com/cloudtask/libtools/gounits/system"
-import "github.com/cloudtask/libtools/gzkwrapper"
+import "cloudtask/common/models"
+import "cloudtask-agent/cache"
+import "cloudtask/libtools/gounits/logger"
+import "cloudtask/libtools/gounits/system"
+import "cloudtask/libtools/gzkwrapper"
 import "gopkg.in/yaml.v2"
 
 import (
@@ -152,7 +152,6 @@ func SaveServerConfig(data []byte) error {
 
 //PidFile is exported
 func PidFile() string {
-
 	if SystemConfig != nil {
 		return SystemConfig.PidFile
 	}
@@ -161,7 +160,6 @@ func PidFile() string {
 
 //RetryStartup is exported
 func RetryStartup() bool {
-
 	if SystemConfig != nil {
 		return SystemConfig.RetryStartup
 	}
@@ -170,7 +168,6 @@ func RetryStartup() bool {
 
 //UseServerConfig is exported
 func UseServerConfig() bool {
-
 	if SystemConfig != nil {
 		return SystemConfig.UseServerConfig
 	}
@@ -233,7 +230,6 @@ func CacheConfigs() *cache.CacheConfigs {
 
 //LoggerConfigs is exported
 func LoggerConfigs() *logger.Args {
-
 	if SystemConfig != nil {
 		return &logger.Args{
 			FileName: SystemConfig.Logger.LogFile,

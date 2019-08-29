@@ -1,7 +1,7 @@
 package driver
 
-import "github.com/cloudtask/common/models"
-import "github.com/cloudtask/libtools/gounits/logger"
+import "cloudtask/common/models"
+import "cloudtask/libtools/gounits/logger"
 
 import (
 	"fmt"

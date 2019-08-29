@@ -1,6 +1,6 @@
 package driver
 
-import "github.com/cloudtask/common/models"
+import "cloudtask/common/models"
 
 import (
 	"fmt"
