@@ -23,7 +23,6 @@ type NotifySender struct {
 
 //NewNotifySender is exported
 func NewNotifySender(centerHost string, runtime string, key string, ipAddr string) *NotifySender {
-
 	client := httpx.NewClient().
 		SetTransport(&http.Transport{
 			Proxy: http.ProxyFromEnvironment,
@@ -52,7 +51,6 @@ func NewNotifySender(centerHost string, runtime string, key string, ipAddr strin
 }
 
 func (sender *NotifySender) doPopLoop() {
-
 	for {
 		value := sender.syncQueue.Pop()
 		if value != nil {
@@ -68,7 +66,6 @@ func (sender *NotifySender) doPopLoop() {
 }
 
 func (sender *NotifySender) sendMessage(msgid string, data interface{}) {
-
 	resp, err := sender.client.PostJSON(context.Background(), sender.CenterHost+"/cloudtask/v2/messages", nil, data, nil)
 	if err != nil {
 		logger.ERROR("[#notify#] message request %s error, %s", msgid, err.Error())
@@ -83,7 +80,6 @@ func (sender *NotifySender) sendMessage(msgid string, data interface{}) {
 }
 
 func (sender *NotifySender) sendLog(msgid string, data interface{}) {
-
 	resp, err := sender.client.PostJSON(context.Background(), sender.CenterHost+"/cloudtask/v2/logs", nil, data, nil)
 	if err != nil {
 		logger.ERROR("[#notify#] logs request %s error, %s", msgid, err.Error())

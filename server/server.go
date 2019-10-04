@@ -247,7 +247,6 @@ func (server *NodeServer) RefreshCacheAlloc() (int, error) {
 
 //monitorCacheAllocLoop is exported
 func (server *NodeServer) monitorCacheAllocLoop() {
-
 	for {
 		runTicker := time.NewTicker(refreshAllocInterval)
 		select {

@@ -1,10 +1,10 @@
 package main
 
-import "cloudtask/libtools/gounits/system"
-
 import (
 	"log"
 	"os"
+
+	"cloudtask/libtools/gounits/system"
 )
 
 func main() {

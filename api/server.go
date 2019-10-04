@@ -38,7 +38,6 @@ type Server struct {
 }
 
 func NewServer(hosts []string, enableCors bool, tlsConfig *tls.Config) *Server {
-
 	router := NewRouter(enableCors, store)
 	return &Server{
 		hosts:     hosts,
@@ -50,22 +49,18 @@ func NewServer(hosts []string, enableCors bool, tlsConfig *tls.Config) *Server {
 }
 
 func RegisterStore(name string, value interface{}) {
-
 	store[name] = value
 }
 
 func (server *Server) ListenHosts() []string {
-
 	return server.hosts
 }
 
 func (server *Server) SetHandler(handler http.Handler) {
-
 	server.dispatcher.SetHandler(handler)
 }
 
 func (server *Server) Startup() error {
-
 	errorsCh := make(chan error, len(server.hosts))
 	for _, host := range server.hosts {
 		protoAddrParts := strings.SplitN(host, "://", 2)
@@ -109,7 +104,6 @@ func (server *Server) Startup() error {
 }
 
 func newListener(proto string, addr string, tlsConfig *tls.Config) (net.Listener, error) {
-
 	l, err := net.Listen(proto, addr)
 	if err != nil {
 		return nil, err

@@ -21,7 +21,6 @@ type Cache struct {
 
 //NewCache is exported
 func NewCache(configs *CacheConfigs, handler ICacheHandler) *Cache {
-
 	return &Cache{
 		dumpCleaner: NewDumpCleaner(configs),
 		jobStore: NewJobStore(configs,

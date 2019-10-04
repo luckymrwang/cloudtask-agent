@@ -194,7 +194,6 @@ func WebSiteHost() string {
 
 //ClusterConfigs is exported
 func ClusterConfigs() *gzkwrapper.WorkerArgs {
-
 	if SystemConfig != nil {
 		return &gzkwrapper.WorkerArgs{
 			Hosts:     SystemConfig.Cluster.Hosts,
@@ -213,7 +212,6 @@ func ClusterConfigs() *gzkwrapper.WorkerArgs {
 
 //CacheConfigs is exported
 func CacheConfigs() *cache.CacheConfigs {
-
 	if SystemConfig != nil {
 		return &cache.CacheConfigs{
 			CenterHost:    SystemConfig.CenterHost,
