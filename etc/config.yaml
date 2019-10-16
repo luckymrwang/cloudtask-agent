@@ -5,7 +5,7 @@ useserverconfig: true
 centerhost: http://127.0.0.1:8985
 websitehost: http://127.0.0.1:8091
 cluster:
-    hosts: 127.0.0.1:2181
+    hosts: 127.0.0.1:2379
     root: /cloudtask
     device:
     runtime: myCluster

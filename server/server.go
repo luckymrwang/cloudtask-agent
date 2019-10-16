@@ -1,14 +1,13 @@
 package server
 
-import "cloudtask-agent/cache"
-import "cloudtask-agent/driver"
-import "cloudtask-agent/etc"
-import "cloudtask-agent/notify"
-import "cloudtask/libtools/gounits/logger"
-import "cloudtask/libtools/gzkwrapper"
-import "cloudtask/common/models"
-
 import (
+	"cloudtask-agent/cache"
+	"cloudtask-agent/driver"
+	"cloudtask-agent/etc"
+	"cloudtask-agent/notify"
+	"cloudtask/common/models"
+	"cloudtask/libtools/gounits/logger"
+	"cloudtask/libtools/gzkwrapper"
 	"time"
 )
 
